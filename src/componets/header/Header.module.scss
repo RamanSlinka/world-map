@@ -1,0 +1,41 @@
+.container {
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 44px 44px 0;
+
+  .logoBlock {
+    display: flex;
+    flex-direction: row;
+
+    .image {
+      width: 44px;
+      height: 44px;
+      margin-right: 44px;
+    }
+
+    .imageName {
+      width: 111px;
+      height: 11px;
+      margin: auto;
+    }
+  }
+
+  .navbarLinks {
+    display: flex;
+    flex-direction: row;
+    width: 330px;
+    height: 44px;
+    margin-left: 260px;
+    margin-right: 130px;
+
+    p {
+      padding-right: 60px;
+      font-weight: bold;
+      font-size: 9px;
+      color: white;
+      margin: auto;
+    }
+  }
+}
