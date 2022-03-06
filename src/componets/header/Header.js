@@ -2,20 +2,22 @@ import React from 'react';
 import style from "./Header.module.scss"
 import logo from "../../assets/images/logo.png"
 import logoName from "../../assets/images/logo_name.png"
+import {PATH} from "../Routes";
+import {NavLink} from "react-router-dom";
 
 const Header = () => {
     return (
         <>
             <nav className="navbar" style={{ backgroundColor: "#9d0a0f", padding:"0"}}>
                 <div className={style.container}>
-                    <div
-                        className={style.logoBlock}>
+                    <div className={style.logoBlock}>
+                        <NavLink to={PATH.HOME}>
                         <img
                             className={style.image}
                             alt="logo"
                             src={logo}
-
                         />
+                        </NavLink>
                       <div className={style.imageNameBlock}>
                           <img
                               className={style.imageName}

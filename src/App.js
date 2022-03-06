@@ -1,13 +1,14 @@
 import './App.scss';
 import Header from "./componets/header/Header";
-import Main from "./componets/main/Main";
+import RoutesPage from "./componets/Routes";
 
 function App() {
     return (
         <div className="App">
             <Header/>
-            <Main/>
-
+            <RoutesPage/>
+           {/*<Main/>*/}
+           {/* <Paris/>*/}
         </div>
     );
 }

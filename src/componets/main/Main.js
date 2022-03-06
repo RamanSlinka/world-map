@@ -1,7 +1,8 @@
 import React from 'react';
 import image from "../../assets/images/world_map.png";
 import style from './Main.module.scss'
-
+import {NavLink} from "react-router-dom";
+import {PATH} from "../Routes";
 const Main = () => {
     return (
         <div className={style.mainContainer}>
@@ -41,7 +42,11 @@ const Main = () => {
                         <ul>
                             <li>Mosbuild</li>
                             <li>BAU</li>
-                            <li>Paris Air Show</li>
+                            <li>
+                                <NavLink to={PATH.PARIS}>
+                                Paris Air Show
+                                </NavLink>
+                                </li>
                             <li>Cersaie</li>
                             <li>ISH</li>
 
