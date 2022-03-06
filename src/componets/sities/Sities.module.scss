@@ -1,0 +1,101 @@
+.mainContainer {
+  color: white;
+
+  .worldImage {
+    position: relative;
+    width: 89%;
+    height: 85vh;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+  }
+
+  .chosenPlace {
+    position: absolute;
+    top: 266px;
+    padding-left: 660px;
+    font-size: 20px;
+    font-weight: 500;
+
+    .wrapperPoint {
+      display: flex;
+      flex-direction: row;
+
+      .arrow {
+        width: 205px;
+        height: 2px;
+        border: 1px solid white;
+        margin-top: 4px;
+      }
+
+      .pointOnTheMap {
+        width: 10px;
+        height: 10px;
+        margin-left: 15px;
+        border: white 5px solid;
+        border-radius: 50%;
+      }
+
+
+    }
+    p {
+      margin: 0;
+      padding: 5px;
+    }
+  }
+
+  .contentWrapper {
+    position: absolute;
+    top: 590px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 135px;
+
+    .itemsWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      line-height: 1.7;
+      color: #5e0609;
+      font-size: 20px;
+      font-weight: 500;
+
+      .firstItemsBlock {
+        padding-right: 110px;
+      }
+
+      .secondItemsBlock {
+        padding-right: 110px;
+      }
+
+
+      .activeCity {
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    .descriptionBlock {
+      width: 700px;
+      height: 230px;
+      margin-left: 280px;
+
+      border: white 3px solid;
+      padding: 50px;
+
+      .descriptionTitle {
+        font-size: 20px;
+      }
+
+      .descriptionText {
+        font-size: 16px;
+        padding-top: 15px;
+        line-height: 2;
+      }
+    }
+  }
+}
