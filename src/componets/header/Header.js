@@ -9,23 +9,28 @@ const Header = () => {
             <nav className="navbar" style={{ backgroundColor: "#9d0a0f", padding:"0"}}>
                 <div className={style.container}>
                     <div
-                        className={style.logoBlock}
-                        href="#home">
+                        className={style.logoBlock}>
                         <img
                             className={style.image}
                             alt="logo"
                             src={logo}
 
                         />
-                        <img
-                            className={style.imageName}
-                            alt="logo"
-                            src={logoName}
-                        />
+                      <div className={style.imageNameBlock}>
+                          <img
+                              className={style.imageName}
+                              alt="logo"
+                              src={logoName}
+                          />
+                      </div>
+
                     </div>
                     <div className={style.navbarLinks}>
                         <p>OUR WORK</p>
                         <p>TECHNOLOGY PROCESS</p>
+                    </div>
+                    <div className={style.navbarLinks}>
+
                     </div>
                     <div className={style.navbarLinks}>
                         <p>ABOUT US</p>
@@ -33,7 +38,7 @@ const Header = () => {
                         <div className="dropdown" >
                             <button className="btn  dropdown-toggle "  id="dropdownMenuButton1"
                                     data-bs-toggle="dropdown" aria-expanded="false" style={{color:"white"}}>
-                                {/*&#9660;*/}
+
 
                             </button>
                             <ul className="dropdown-menu" >

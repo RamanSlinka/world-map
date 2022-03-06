@@ -1,14 +1,12 @@
 import './App.scss';
 import Header from "./componets/header/Header";
-import image from "./assets/images/world_map.png"
+import Main from "./componets/main/Main";
 
 function App() {
     return (
         <div className="App">
             <Header/>
-            <div>
-                <img src={image} alt="world" style={{width:"85%"}}/>
-            </div>
+            <Main/>
 
         </div>
     );

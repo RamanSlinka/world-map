@@ -1,0 +1,73 @@
+.mainContainer {
+  color: white;
+
+  .worldImage {
+    position: relative;
+    width: 89%;
+    height: 85vh;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  padding-top: 20px;
+  }
+
+  .mainTitle {
+    position: absolute;
+    top: 320px;
+    padding-left: 135px;
+    font-size: 95px;
+    font-weight: 500;
+  }
+
+
+  .contentWrapper {
+    position: absolute;
+    top: 590px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 135px;
+
+    .itemsWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      line-height: 1.7;
+
+      font-size: 20px;
+
+      .firstItemsBlock {
+        padding-right: 110px;
+      }
+
+      .secondItemsBlock {
+        padding-right: 110px;
+      }
+
+      .thirdItemsBlock {
+
+      }
+    }
+
+    .descriptionBlock {
+      width: 700px;
+      height: 230px;
+      margin-left: 280px;
+
+      border: white 3px solid;
+      padding: 50px;
+
+      .descriptionTitle {
+        font-size: 20px;
+      }
+
+      .descriptionText {
+        font-size: 16px;
+        padding-top: 15px;
+        line-height: 2;
+      }
+    }
+  }
+}
