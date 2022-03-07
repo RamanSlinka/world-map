@@ -1,8 +1,8 @@
 import React from 'react';
+import style from "./Sities.module.scss";
 import image from "../../assets/images/world_map.png";
-import style from './Sities.module.scss'
 
-const Paris = () => {
+const Tokio = () => {
     return (
         <div className={style.mainContainer}>
             <div>
@@ -10,16 +10,16 @@ const Paris = () => {
                      className={style.worldImage}
                 />
             </div>
-            <div className={style.chosenPlaceParis}>
+            <div className={style.chosenPlaceTokio}>
                 <div>
-                    <p>Paris Air Show</p>
+                    <p>ISH</p>
                 </div>
                 <div className={style.wrapperPoint}>
                     <div className={style.arrow}></div>
                     <div className={style.pointOnTheMap}></div>
                 </div>
                 <div>
-                    <p>Paris (France)</p>
+                    <p>Tokio (Japan)</p>
                 </div>
             </div>
             <div className={style.contentWrapper}>
@@ -48,11 +48,11 @@ const Paris = () => {
                     </div>
                     <div>
                         <ul>
-                            <li>Mosbuild</li>
+                            <li >Mosbuild</li>
                             <li>BAU</li>
-                            <li className={style.activeCity}>Paris Air Show</li>
+                            <li >Paris Air Show</li>
                             <li>Cersaie</li>
-                            <li>ISH</li>
+                            <li className={style.activeCity}>ISH</li>
 
                         </ul>
                     </div>
@@ -69,4 +69,4 @@ const Paris = () => {
     );
 };
 
-export default Paris;
+export default Tokio;

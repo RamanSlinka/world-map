@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from "./Header.module.scss"
 import logo from "../../assets/images/logo.png"
 import logoName from "../../assets/images/logo_name.png"
@@ -6,6 +6,8 @@ import {PATH} from "../Routes";
 import {NavLink} from "react-router-dom";
 
 const Header = () => {
+    const [pl, setPl] = useState(true);
+
     return (
         <>
             <nav className="navbar" style={{ backgroundColor: "#9d0a0f", padding:"0"}}>
@@ -44,10 +46,10 @@ const Header = () => {
 
                             </button>
                             <ul className="dropdown-menu" >
-                                <li><a className="dropdown-item" href="#">Pl</a></li>
-                                <li><a className="dropdown-item" href="#">En</a></li>
+                                <li><a className="dropdown-item" onClick={() => setPl(true)}>Pl</a></li>
+                                <li><a className="dropdown-item" onClick={() => setPl(false)}>En</a></li>
                             </ul>
-                            <span className="fs-7 link-light">PL</span>
+                            <span className="fs-7 link-light">{pl ? "PL" : "EN"}</span>
                         </div>
                     </div>
                 </div>

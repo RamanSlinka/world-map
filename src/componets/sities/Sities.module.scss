@@ -12,12 +12,41 @@
     padding-top: 20px;
   }
 
-  .chosenPlace {
+  .chosenPlaceParis {
     position: absolute;
     top: 266px;
     padding-left: 660px;
     font-size: 20px;
     font-weight: 500;
+  }
+  .chosenPlaceNY{
+    position: absolute;
+    top: 300px;
+    padding-left: 210px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .chosenPlaceTokio{
+    position: absolute;
+    top: 325px;
+    padding-left: 1425px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .chosenPlaceBrazil{
+    position: absolute;
+    top: 625px;
+    padding-left: 350px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .chosenPlaceSydney{
+    position: absolute;
+    top: 730px;
+    padding-left: 1503px;
+    font-size: 20px;
+    font-weight: 500;
+  }
 
     .wrapperPoint {
       display: flex;
@@ -44,7 +73,7 @@
       margin: 0;
       padding: 5px;
     }
-  }
+
 
   .contentWrapper {
     position: absolute;
@@ -54,7 +83,16 @@
     flex-direction: row;
     justify-content: space-around;
     padding-left: 135px;
+  }
+  .contentWrapperUp {
+    position: absolute;
+    top: 190px;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 135px;
+  }
     .itemsWrapper {
       display: flex;
       flex-direction: row;
@@ -82,7 +120,7 @@
     .descriptionBlock {
       width: 700px;
       height: 230px;
-      margin-left: 280px;
+      margin-left: 270px;
 
       border: white 3px solid;
       padding: 50px;
@@ -97,5 +135,5 @@
         line-height: 2;
       }
     }
-  }
+
 }

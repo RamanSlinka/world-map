@@ -3,13 +3,14 @@ import image from "../../assets/images/world_map.png";
 import style from './Main.module.scss'
 import {NavLink} from "react-router-dom";
 import {PATH} from "../Routes";
+
 const Main = () => {
     return (
         <div className={style.mainContainer}>
-            <div >
+            <div>
                 <img src={image} alt="world"
                      className={style.worldImage}
-                    />
+                />
             </div>
             <div>
                 <h1 className={style.mainTitle}>World ahead</h1>
@@ -40,16 +41,31 @@ const Main = () => {
                     </div>
                     <div className={style.thirdItemsBlock}>
                         <ul>
-                            <li>Mosbuild</li>
-                            <li>BAU</li>
                             <li>
-                                <NavLink to={PATH.PARIS}>
-                                Paris Air Show
+                                <NavLink to={PATH.NEW_YORK}>
+                                    Mosbuild
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to={PATH.BRASILIA}>
+                                BAU
                                 </NavLink>
                                 </li>
-                            <li>Cersaie</li>
-                            <li>ISH</li>
-
+                            <li>
+                                <NavLink to={PATH.PARIS}>
+                                    Paris Air Show
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to={PATH.SYDNEY}>
+                                Cersaie
+                                </NavLink>
+                                </li>
+                            <li>
+                                <NavLink to={PATH.TOKIO}>
+                                    ISH
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
                 </div>
