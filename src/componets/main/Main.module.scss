@@ -1,18 +1,24 @@
 .mainContainer {
   color: white;
-a:hover{
-  color: #f3060e;
+  max-width: 100%;
 
-}
+  a:hover {
+    color: #f3060e;
+
+  }
+
   .worldImage {
     position: relative;
-    width: 89%;
+    max-width: 89%;
     height: 85vh;
 
     display: block;
     margin-left: auto;
     margin-right: auto;
-  padding-top: 20px;
+    padding-top: 20px;
+    @media screen and (max-width: 600px) {
+
+    }
   }
 
   .mainTitle {
@@ -21,8 +27,20 @@ a:hover{
     padding-left: 135px;
     font-size: 95px;
     font-weight: 500;
+    @media screen and (max-width: 600px) {
+      font-size: 65px;
+      font-weight: 500;
+      top: 80px;
+      padding-left: 60px;
+    }
+    @media screen and (max-width: 482px){
+      font-size: 50px;
+      top: 60px;
+    }  @media screen and (max-width: 385px){
+      font-size: 40px;
+      top: 60px;
+    }
   }
-
 
   .contentWrapper {
     position: absolute;
@@ -31,22 +49,42 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    max-width: 100%;
     padding-left: 135px;
+    @media screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      top: 210px;
+      padding-left: 60px;
+    }
+    @media screen and (max-width: 482px){
+      top: 160px;
+    }
 
     .itemsWrapper {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       line-height: 1.7;
-
       font-size: 20px;
+      @media screen and (max-width: 600px) {
+        justify-content: left;
+        font-size: 18px;
+      }
 
       .firstItemsBlock {
         padding-right: 110px;
+        @media screen and (max-width: 600px) {
+          display: none;
+        }
       }
 
       .secondItemsBlock {
         padding-right: 110px;
+        @media screen and (max-width: 600px) {
+          padding-right: 60px;
+        }
       }
 
 
@@ -59,6 +97,16 @@ a:hover{
 
       border: white 3px solid;
       padding: 50px;
+      @media screen and (max-width: 600px) {
+        max-width: 90%;
+        height: 280px;
+        margin: 80px 0 0;
+      }
+      @media screen and (max-width: 500px) {
+        height: 330px;
+        margin: 60px 0 0;
+        padding: 35px;
+      }
 
       .descriptionTitle {
         font-size: 20px;
@@ -68,6 +116,12 @@ a:hover{
         font-size: 16px;
         padding-top: 15px;
         line-height: 2;
+        @media screen and (max-width: 600px) {
+          line-height: 1.5;
+        }
+        @media screen and (max-width: 390px){
+          font-size: 14px;
+        }
       }
     }
   }

@@ -3,6 +3,9 @@
   flex-direction: row;
   width: 100%;
   padding: 44px 44px 0;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 
   .logoBlock {
     display: flex;
@@ -16,10 +19,11 @@
 
     .imageNameBlock {
       width: 360px;
+
       .imageName {
         width: 111px;
         height: 11px;
-        margin-top: 17px ;
+        margin-top: 17px;
       }
     }
   }
@@ -32,7 +36,7 @@
     margin-left: 44px;
 
     p {
-     padding-right: 50px;
+      padding-right: 50px;
       font-weight: bold;
       font-size: 12px;
       color: white;

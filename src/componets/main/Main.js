@@ -73,7 +73,7 @@ const Main = () => {
                     <h2 className={style.descriptionTitle}>We work around the world</h2>
                     <p className={style.descriptionText}>Our work is based on close relations and business wise
                         flexibility world- <br/>wide. Advanced
-                        management system and hi tech facility allows us to <br/>manage big projects in short time </p>
+                        management system and hi tech facility allows us to <br/>manage big projects in short time. </p>
                 </div>
 
             </div>
