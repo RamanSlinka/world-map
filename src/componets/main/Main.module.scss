@@ -1,25 +1,45 @@
+.imageContainer {
+  position: relative;
+  .worldImage {
+
+    max-width: 1584px;
+    height: 85vh;
+
+   // background: #ff0090;
+
+    display: block;
+    margin:  0 auto;
+    top: 20px;
+    left: 40px;
+    @media screen and (max-width: 1600px) {
+      max-width: 1384px;
+    }  @media screen and (max-width: 1440px) {
+      max-width: 1184px;
+    }  @media screen and (max-width: 1280px) {
+      max-width: 984px;
+    }  @media screen and (max-width: 1024px) {
+      max-width: 784px;
+    }
+    @media screen and (max-width: 854px){
+      max-width: 584px;
+    }
+  }
+
+}
+
+
 .mainContainer {
   color: white;
-  max-width: 100%;
+  max-width: 1453px;
+
+  background: #f3060e;
 
   a:hover {
     color: #f3060e;
 
   }
 
-  .worldImage {
-    position: relative;
-    max-width: 89%;
-    height: 85vh;
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    @media screen and (max-width: 600px) {
-
-    }
-  }
 
   .mainTitle {
     position: absolute;

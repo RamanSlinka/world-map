@@ -9,7 +9,7 @@ const Header = () => {
     const [pl, setPl] = useState(true);
 
     return (
-        <>
+        <header>
             <nav className="navbar" style={{ backgroundColor: "#9d0a0f", padding:"0"}}>
                 <div className={style.container}>
                     <div className={style.logoBlock}>
@@ -54,7 +54,7 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-        </>
+        </header>
     );
 };
 

@@ -5,10 +5,10 @@ import RoutesPage from "./componets/Routes";
 function App() {
     return (
         <div className="App">
+        <div className=" container ">
             <Header/>
             <RoutesPage/>
-           {/*<Main/>*/}
-           {/* <Paris/>*/}
+        </div>
         </div>
     );
 }
