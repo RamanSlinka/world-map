@@ -10,7 +10,7 @@ const Header = () => {
 
     return (
         <header>
-            <nav className="navbar" style={{ backgroundColor: "#9d0a0f", padding:"0"}}>
+            <nav className="navbar " style={{ backgroundColor: "#9d0a0f", padding:"0"}}>
                 <div className={style.container}>
                     <div className={style.logoBlock}>
                         <NavLink to={PATH.HOME}>

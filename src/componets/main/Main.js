@@ -11,8 +11,19 @@ const Main = () => {
                 <img src={image} alt="world"
                      className={style.worldImage}
                 />
+                {/*<div className={style.chosenPlaceNY}>*/}
+
+                {/*    <div className={style.wrapperPoint}>*/}
+                {/*        <div className={style.arrow}></div>*/}
+                {/*        <div className={style.pointOnTheMap}></div>*/}
+                {/*    </div>*/}
+
+                {/*</div>*/}
+
 
             </div>
+
+
             <div className={style.mainContainer}>
 
                 <div>
