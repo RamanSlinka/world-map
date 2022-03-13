@@ -1,24 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 import image from "../../assets/images/world_map.png";
 import style from './Main.module.scss'
 import {NavLink} from "react-router-dom";
 import {PATH} from "../Routes";
 
 const Main = () => {
+    const [place, setPlace] = useState(false)
     return (
         <>
             <div className={style.imageContainer}>
                 <img src={image} alt="world"
                      className={style.worldImage}
                 />
-                {/*<div className={style.chosenPlaceNY}>*/}
-
-                {/*    <div className={style.wrapperPoint}>*/}
-                {/*        <div className={style.arrow}></div>*/}
-                {/*        <div className={style.pointOnTheMap}></div>*/}
-                {/*    </div>*/}
-
-                {/*</div>*/}
+                {place ? <div className={style.chosenPlaceNY}>
+                        <div>
+                            <p>Mosbuild</p>
+                        </div>
+                        <div className={style.wrapperPoint}>
+                            <div className={style.arrow}></div>
+                            <div className={style.pointOnTheMap}></div>
+                        </div>
+                        <div>
+                            <p>New York (USA)</p>
+                        </div>
+                    </div>
+                : ''}
 
 
             </div>
@@ -26,9 +32,10 @@ const Main = () => {
 
             <div className={style.mainContainer}>
 
-                <div>
+                { !place ? <div>
                     <h1 className={style.mainTitle}>World ahead</h1>
                 </div>
+                : ''}
                 <div className={style.contentWrapper}>
                     <div className={style.itemsWrapper}>
                         <div className={style.firstItemsBlock}>
@@ -55,10 +62,10 @@ const Main = () => {
                         </div>
                         <div className={style.thirdItemsBlock}>
                             <ul>
-                                <li>
-                                    <NavLink to={PATH.NEW_YORK}>
+                                <li onMouseOver={()=> setPlace(!place)}>
+                                    {/*<NavLink to={PATH.NEW_YORK}>*/}
                                         Mosbuild
-                                    </NavLink>
+                                    {/*</NavLink>*/}
                                 </li>
                                 <li>
                                     <NavLink to={PATH.BRASILIA}>
