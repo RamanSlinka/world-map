@@ -19,6 +19,9 @@
 
     .imageNameBlock {
       width: 360px;
+      @media screen and (max-width: 1100px) {
+        width: 150px;
+      }
 
       .imageName {
         width: 111px;
@@ -34,6 +37,12 @@
     width: 340px;
     height: 44px;
     margin-left: 44px;
+    @media screen and (max-width: 1100px) {
+      width: 240px;
+    } @media screen and (max-width: 900px) {
+      width: 140px;
+    margin-left: 0;
+    }
 
     p {
       padding-right: 50px;
@@ -41,6 +50,9 @@
       font-size: 12px;
       color: white;
       margin: auto;
+      @media screen and (max-width: 810px) {
+        padding-right: 10px;
+      }
     }
   }
 }

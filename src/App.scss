@@ -2,10 +2,6 @@
   background-color: #9d0a0f;
   height: 100vh;
   width: 100%;
-  //@media screen and (max-width: 600px){
-  //
-  //  background-color: #b70307;
-  //}
   .container {
     max-width: 1700px;
     margin: 0 auto;
@@ -17,6 +13,7 @@
     }
     @media screen and (max-width: 1280px){
       max-width: 1024px;
+      height: auto;
     }
     @media screen and (max-width: 1024px){}
     @media screen and (max-width: 854px){}
