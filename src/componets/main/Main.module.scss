@@ -54,7 +54,44 @@
       top: 24%;
       font-size: 10px;
     }
-
+    @media screen and (max-width: 600px){
+      display: none;
+    }
+  }
+  .chosenPlaceParis {
+    position: absolute;
+    top: 137px;
+    left: 499px;
+    font-size: 20px;
+    font-weight: 500;
+    @media screen and (max-width: 1700px) {
+      top: 120px;
+      left: 467px;
+    }
+    @media screen and (max-width: 1600px) {
+      left: 432px;
+      top: 122px;
+    }
+    @media screen and (max-width: 1440px) {
+      left: 362px;
+    }
+    @media screen and (max-width: 1280px) {
+      left: 242px;
+    }
+    @media screen and (max-width: 1024px) {
+      left: 257px;
+      top: 127px;
+      font-size: 15px;
+    }
+    @media screen and (max-width: 854px) {
+      left: 180px;
+      top: 132px;
+      font-size: 10px;
+    }
+    @media screen and (max-width: 600px){
+      display: none;
+    }
+  }
     p {
       color: white;
       margin: 0;
@@ -94,7 +131,7 @@
 
 
     }
-  }
+
 
 }
 

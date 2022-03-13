@@ -5,14 +5,15 @@ import {NavLink} from "react-router-dom";
 import {PATH} from "../Routes";
 
 const Main = () => {
-    const [place, setPlace] = useState(false)
+    const [placeNY, setPlaceNY] = useState(false);
+    const [placeParis, setPlaceParis] = useState(false);
     return (
         <>
             <div className={style.imageContainer}>
                 <img src={image} alt="world"
                      className={style.worldImage}
                 />
-                {place ? <div className={style.chosenPlaceNY}>
+                {placeNY ? <div className={style.chosenPlaceNY}>
                         <div>
                             <p>Mosbuild</p>
                         </div>
@@ -25,6 +26,19 @@ const Main = () => {
                         </div>
                     </div>
                 : ''}
+                {placeParis ? <div className={style.chosenPlaceParis}>
+                        <div>
+                            <p>Paris Air Show</p>
+                        </div>
+                        <div className={style.wrapperPoint}>
+                            <div className={style.arrow}></div>
+                            <div className={style.pointOnTheMap}></div>
+                        </div>
+                        <div>
+                            <p>Paris (France)</p>
+                        </div>
+                    </div>
+                : ''}
 
 
             </div>
@@ -32,7 +46,7 @@ const Main = () => {
 
             <div className={style.mainContainer}>
 
-                { !place ? <div>
+                { !placeNY & !placeParis ? <div>
                     <h1 className={style.mainTitle}>World ahead</h1>
                 </div>
                 : ''}
@@ -62,7 +76,7 @@ const Main = () => {
                         </div>
                         <div className={style.thirdItemsBlock}>
                             <ul>
-                                <li onMouseOver={()=> setPlace(!place)}>
+                                <li onMouseOver={()=> setPlaceNY(!placeNY)}>
                                     {/*<NavLink to={PATH.NEW_YORK}>*/}
                                         Mosbuild
                                     {/*</NavLink>*/}
@@ -72,10 +86,10 @@ const Main = () => {
                                         BAU
                                     </NavLink>
                                 </li>
-                                <li>
-                                    <NavLink to={PATH.PARIS}>
+                                <li onMouseOver={()=> (setPlaceParis(!placeParis) & setPlaceNY(!placeNY))}>
+                                    {/*<NavLink to={PATH.PARIS}>*/}
                                         Paris Air Show
-                                    </NavLink>
+                                    {/*</NavLink>*/}
                                 </li>
                                 <li>
                                     <NavLink to={PATH.SYDNEY}>
